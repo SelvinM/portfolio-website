@@ -25,10 +25,10 @@ export default function RootLayout({
           <div className="p-6 sm:p-10 md:p-14 lg:py-24 lg:top-0 lg:h-screen lg:justify-between lg:sticky lg:flex lg:items-start lg:w-1/2 lg:flex-col">
             <div>
               <div className="mb-10 lg:mb-16">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 mb-4">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                   Selvin Mayes
                 </h1>
-                <h2 className=" text-lg sm:text-xl md:text-2xl  font-bold text-indigo-600 mb-2 md:mb-4">
+                <h2 className=" text-lg sm:text-xl md:text-2xl  font-bold text-emerald-700 mb-2 md:mb-4">
                   Front-End Engineer
                 </h2>
                 <span className="block">
@@ -37,7 +37,7 @@ export default function RootLayout({
               </div>
               <NavLinks />
             </div>
-            <div className="flex space-x-4 items-center text-indigo-600 text-2xl md:text-3xl">
+            <div className="flex space-x-4 items-center text-emerald-700 text-2xl md:text-3xl">
               <a
                 href="#"
                 className="opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out"
