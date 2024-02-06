@@ -7,35 +7,31 @@ type Props = {};
 
 const NavLinks = (props: Props) => {
   const [active, setActive] = useState(1);
-
   useEffect(() => {
     const handleScroll = () => {
       const aboutMeSection = document.getElementById("about-me");
       const experienceSection = document.getElementById("experience");
       const projectsSection = document.getElementById("projects");
-
       const scrollPosition = window.scrollY;
-
       if (
         aboutMeSection &&
+        experienceSection &&
         scrollPosition >= aboutMeSection.offsetTop &&
-        scrollPosition < (experienceSection?.offsetTop || 0)
+        scrollPosition < experienceSection.offsetTop
       ) {
         setActive(1);
       } else if (
         experienceSection &&
+        projectsSection &&
         scrollPosition >= experienceSection.offsetTop &&
-        scrollPosition < (projectsSection?.offsetTop || 0)
+        scrollPosition < projectsSection.offsetTop
       ) {
         setActive(2);
-      } else if (
-        projectsSection &&
-        scrollPosition >= projectsSection.offsetTop
-      ) {
+      } else {
         setActive(3);
       }
     };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -43,7 +39,7 @@ const NavLinks = (props: Props) => {
   }, []);
 
   return (
-    <nav className="space-y-8 font-bold text-emerald-700 hidden lg:block scroll-smooth">
+    <nav className="space-y-8 font-bold text-emerald-700 hidden lg:block">
       <ul className="max-w-48">
         <Link href="#about-me" className="flex items-center group space-x-4">
           <span
