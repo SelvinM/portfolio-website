@@ -39,13 +39,13 @@ export default function RootLayout({
             </div>
             <div className="flex space-x-4 items-center text-emerald-700 text-2xl md:text-3xl">
               <a
-                href="#"
+                href="https://github.com/SelvinM"
                 className="opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out"
               >
                 <FaGithub />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/selvin-mayes/"
                 className="opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out"
               >
                 <FaLinkedin />
