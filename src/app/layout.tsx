@@ -52,7 +52,7 @@ export default function RootLayout({
               </a>
             </div>
           </div>
-          <main className="p-6 sm:p-10 md:p-14 lg:pt-0 lg:pb-24 lg:w-1/2 ">
+          <main className="p-6 pb-24 sm:p-10  md:p-14 md:pb-24 lg:pt-0 lg:w-1/2 ">
             {children}
           </main>
         </div>
