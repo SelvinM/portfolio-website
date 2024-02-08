@@ -24,7 +24,7 @@ const NavLinks = (props: Props) => {
         experienceSection &&
         projectsSection &&
         scrollPosition >= experienceSection.offsetTop &&
-        scrollPosition < projectsSection.offsetTop
+        scrollPosition < projectsSection.offsetTop - 1
       ) {
         setActive(2);
       } else {
