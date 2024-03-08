@@ -29,7 +29,7 @@ export default function RootLayout({
                   Selvin Mayes
                 </h1>
                 <h2 className=" text-lg sm:text-xl md:text-2xl  font-bold text-emerald-700 mb-2 md:mb-4">
-                  Front-End Engineer
+                  Full-Stack Developer
                 </h2>
                 <span className="block">
                   I build compelling and user-friendly web applications.
